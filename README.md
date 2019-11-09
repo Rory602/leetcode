@@ -2,7 +2,9 @@
 
 Remember solutions are only solutions to given problems. If you want full study checklist for code & whiteboard interview, please turn to [jwasham's coding-interview-university](https://github.com/jwasham/coding-interview-university).
 
-Also, there are open source implementations for basic data structs and algorithms, such as [Algorithms in Python](https://github.com/TheAlgorithms/Python) and [Algorithms in Java](https://github.com/TheAlgorithms/Java). 
+Also, there are open source implementations for basic data structs and algorithms, such as [Algorithms in Python](https://github.com/TheAlgorithms/Python) and [Algorithms in Java](https://github.com/TheAlgorithms/Java).
+
+## Problems & Solutions
 
 [Python](https://github.com/qiyuangong/leetcode/tree/master/python) and [Java](https://github.com/qiyuangong/leetcode/tree/master/java) full list. &hearts; means you need a subscription.
 
@@ -21,6 +23,7 @@ Also, there are open source implementations for basic data structs and algorithm
 | 15 | [3Sum](https://leetcode.com/problems/3sum/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/015_3Sum.py) | 1. Sort and O(n^2) search with three points <br>2. Multiple Two Sum (Problem 1) |
 | 16 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/016_3Sum_Closest.py) | Sort and Multiple Two Sum check abs|
 | 18 | [4Sum](https://leetcode.com/problems/4sum/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/018_4Sum.py) | The same as 3Sum, but we can merge pairs with the same sum |
+| 19 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/019_Remove_Nth_Node_From_End_of_List.py) [Java](https://github.com/qiyuangong/leetcode/blob/master/java/019_Remove_Nth_Node_From_End_of_List.java) | 1. Go through list and get length, then remove length-n, O(n) and O(n)<br>2. Two pointers, first pointer goes to n position, then move both pointers until reach tail, O(n) and O(n) |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/020_Valid_Parentheses.py) | 1. Stack<br>2. Replace all parentheses with '', if empty then True |
 | 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/021_Merge_Two_Sorted_Lists.py) | Add a dummy head, then merge two sorted list in O(m+n) |
 | 23 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/023_Merge_k_Sorted_Lists.py) | 1. Priority queue O(nk log k)<br>2. Binary merge O(nk log k)|  |
@@ -78,6 +81,7 @@ Also, there are open source implementations for basic data structs and algorithm
 | 186 | [Reverse Words in a String II](https://leetcode.com/problems/reverse-words-in-a-string-ii/) &hearts;| [Python](https://github.com/qiyuangong/leetcode/blob/master/python/186_Reverse_Words_in_a_String_II.py) | Reverse all and reverse each words |
 | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/198_House_Robber.py) | f(k) = max(f(k – 2) + num[k], f(k – 1)), O(n) and O(1) |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/200_Number_of_Islands.py) | 1. Quick union find, O(nlogn) and O(n^2)<br>2. BFS with marks, O(n^2) and O(1) |
+| 204 | [Count Primes](https://leetcode.com/problems/count-primes/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/204_Count_Primes.py) [Java](https://github.com/qiyuangong/leetcode/blob/master/java/204_Count_Primes.java) [CPP](https://github.com/qiyuangong/leetcode/blob/master/cpp/204_Count_Primes.cpp) | [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes#Algorithm_complexity), O(nloglogn) and O(n) |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/206_Reverse_Linked_List.py) | 1. Stack, O(n) and O(n)<br>2. Traverse on prev and curr, then curr.next = prev, O(n) and O(1)<br>3. Recursion, O(n) and O(1) | 
 | 213 | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/213_House_Robber_II.py) | f(k) = max(f(k – 2) + num[k], max(dp[0~ls-2],dp[1~ls-1], O(n) and O(1)|
 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/215_Kth_Largest_Element_in_an_Array.py) [Java](https://github.com/qiyuangong/leetcode/blob/master/java/215_Kth_Largest_Element_in_an_Array.java) | 1. Sort, O(n) and O(n)<br>2. Heap, O(nlgk) and O(n)<br>3. Quick selection, O(klgn) and O(n)|
@@ -94,7 +98,7 @@ Also, there are open source implementations for basic data structs and algorithm
 | 246 | [Strobogrammatic Number](https://leetcode.com/problems/strobogrammatic-number/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/246_Strobogrammatic_Number.py) | Hash table and reverse string, O(n) and O(n) |
 | 249 | [Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/249_Group_Shifted_Strings.py) | Hash and generate hash code for each string, O(n) and O(n) |
 | 252 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/252_Meeting_Rooms.py) | 1. Sort and compare intervals[i].end with intervals[i+1], O(nlogn) and O(1)<br>2. Sort and check intervals when count >= 2, O(nlogn) and O(n) |
-| 253 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/253_Meeting_Rooms_II.py) &hearts; [Java](https://github.com/qiyuangong/leetcode/blob/master/java/253_Meeting_Rooms_II.java) | 1. Priority queue and sort, O(nlogn) and O(n)<br>2. Go through timeline. If it's a start then meeting + 1, else meeting - 1. The ans is the max(meeting) in timeline. O(nlogn) and O(n) |
+| 253 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/253_Meeting_Rooms_II.py) [Java](https://github.com/qiyuangong/leetcode/blob/master/java/253_Meeting_Rooms_II.java) | 1. Priority queue and sort, O(nlogn) and O(n)<br>2. Go through timeline. If it's a start then meeting + 1, else meeting - 1. The ans is the max(meeting) in timeline. O(nlogn) and O(n) |
 | 259 | [3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/259_3Sum_Smaller.py) | 1. Reduce to two sum smaller, then binary search, O(n^2lgn) and O(1)<br>2. Reduce to two sum smaller, then two points, O(n^2) and O(1)|
 | 266 | [Palindrome Permutation](https://leetcode.com/problems/palindrome-permutation/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/266_Palindrome_Permutation.py) | Compute frequency, check number of odd occurrences <= 1 then palindrome, O(n) and O(n)|
 | 267 | [Palindrome Permutation II](https://leetcode.com/problems/palindrome-permutation-ii/) &hearts; | [Python](https://github.com/qiyuangong/leetcode/blob/master/python/267_Palindrome_Permutation_II.py) | Check palindrome then generate half with [Permutations II](https://leetcode.com/problems/permutations-ii/), O(n^2) and O(n^2) |
@@ -217,7 +221,7 @@ Also, there are open source implementations for basic data structs and algorithm
 |---| ----- |
 | 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) |
 
-# Other Leetcode Repos
+## Other Leetcode Repos
 
 1. [haoel's leetcode](https://github.com/haoel/leetcode)
 2. [soulmachine's leetcode](https://github.com/soulmachine/leetcode)
